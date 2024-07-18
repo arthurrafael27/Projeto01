@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+
+.center{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.w33{
+width: 33.3%;
+}
+    
+
+.w50{
+    width: 50%;
+    padding: 0 10px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    padding: 10px 0;
+    background: #bb33bb;
+}
+
+header .logo{
+    font-size: 20px;
+    font-weight: 300px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.mobile{
+    display: none;
+    text-transform: uppercase;
+}
+
+nav.desktop ul{
+    position: relative;
+    list-style-type: none;
+    text-transform: uppercase;
+    top: 6px;
+}
+
+nav.desktop li{
+    font-weight: 300px;
+    font-size: 15px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    display: inline-block
+}
+
+nav.desktop a{
+    color: black;
+    text-decoration: none;
+}
+
+section.banner-principal{
+    width: 100%;
+    background-image:url('../projeto01/fundo-de-banner-largo-de-tecnologia-azul-colorida-moderna-fundo-abstrato-para-o-projeto-do-banner-banner-da-web-textura-e-cabecalho-do-site-molde-abstrato-do-fundo-do-teste-padrao-do-projeto-grafico-do-ve.avif');
+    height: 100%;
+    
+    background-size: cover;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+section.banner-prncipal form{
+    width: 98%;
+    max-width: 600px;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% -50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+section.banner-principal form h2{
+    color: aliceblue;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+}
+
+section.banner-principal form input[type=email]{
+
+    width: 100%;
+    height: 40px;
+    background: white;
+    color: #333;
+    font-size: 23px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+section.banner-principal form input[type=submit]{
+
+    width: 100%;
+    height: 30px;
+    background:  #bb33bb;
+    cursor: pointer;
+    font-size: 20px;
+    border: 0;
+   
+}
+
+section.descricao-autor{
+    padding: 30px 20px;
+    text-align: center;
+}
+
+section.descricao-autor h2{
+    font-size: 28px;
+    font-weight: 300;
+    color: #444;
+
+}
+
+section.descricao-autor p{
+    font-size: 16px;
+    color: #444;
+    margin-top: 10px;
+    font-weight: 300;
+    padding: 30px 20px;
+}
+
+section.especialidades{
+    padding: 40px 0;
+    background: #e2e2e2;
+}
+
+section.especialidades h2.title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    color: #999;
+}
+
+.box-especialidade{
+   margin: 40px 0;
+}
+
+.box-especialidade h3{
+    text-align: center;
+    color: #bb33bb;
+    font-size: 30px;
+
+}
+
+.box-especialidade h4{
+    text-align: center;
+    color: #bb33bb;
+    font-size: 15px;
+
+}
+
+.box-especialidade p{
+    color: #444;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+section.extras{
+    padding: 30px 0;
+    text-align: center;
+    
+}
+
+.depoimentos-container,.servicos-container{
+    padding: 0 2%;
+}
+
+section.extras .title{
+    color: #333;
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.servicos li{
+    color: #333;
+    font-weight: 150;
+    font-size: 10px;
+
+}
+
+div.servicos ul{
+margin: 20px 0;
+list-style-position: inside;
+}
+
+.box-servicos{
+    margin: 40px 0;
+ }
+
+.box-servicos h4{
+    text-align: center;
+    color: #bb33bb;
+    font-size: 15px;
+
+}
+
+.box-servicos h3{
+    text-align: center;
+    color: #333;
+    font-size: 15px;
+
+}
+
+.box-servicos p{
+    color: #444;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+footer{
+    text-align: center;
+    color: #bb33bb;
+    font-size: 15px;
+    margin-top: 5px;
+
+}
+
+
+
+
+
+@media screen and (max-width: 700px){
+  nav.desktop{
+       display: none;
+}
+
+nav.mobile{
+    display: block;
+}
+
+.botao-menu-mobile{
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+nav.mobile ul{
+    top: 55px;
+    position: absolute;
+    left: 0;
+    display: none;
+    z-index: 3;
+    text-align: center;
+}
+
+nav.mobile li{
+    width: 100%;
+    font-size: 15px;
+    display: block;
+    background: white;
+    border-bottom: 1px;
+    padding: 8px 0;
+    font-weight: 300;
+
+}
+nav.mobile li a{
+    display: block;
+    color: #444;
+    text-decoration: none;
+
+}
+
+}
+
+@media screen and (max-width: 768px){
+    imag{
+        float: none !important;
+        display: block;
+        margin:0 auto;
+        max-width: 400px;
+
+        box-especialidade{
+            padding: 40px 20px;
+            margin: 0;
+        }
+    }
+    w50{
+        padding: 20px;
+        width: 100%;
+    }
+
+    w33{
+       width: 100%;
+       padding: 20px;
+    }
+}
